@@ -41,3 +41,44 @@
 .description {
     font-weight: bold;
 }
+
+.pagination {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+.previous {
+width: 15.2rem;
+height: 2.8rem;
+background: rgba(46, 46, 45, 0.7);
+border-radius: 15px;
+background-image: url("../../src/assets/light-saber-blue-left-deactivated.png");
+background-repeat: no-repeat;
+cursor: pointer;
+margin-right: 2rem;
+padding-bottom: 0.5rem;
+}
+
+.previous:hover {
+-webkit-transition: background-image transform 0.5s ease-in;
+transition: background-image transform 0.5s ease-in;
+background-image: url("../../src/assets/light-saber-blue-left-activated.png");
+}
+
+.next {
+width: 15.2rem;
+height: 2.8rem;
+background: rgba(46, 46, 45, 0.7);
+border-radius: 15px;
+background-image: url("../../src/assets/light-saber-red-right-deactivated.png");
+background-repeat: no-repeat;
+cursor: pointer;
+margin-left: 2rem;
+padding-bottom: 0.5rem;
+}
+
+.next:hover {
+-webkit-transition: background-image transform 0.5s ease-in;
+transition: background-image transform 0.5s ease-in;
+background-image: url("../../src/assets/light-saber-red-right-activated.png");
+}
