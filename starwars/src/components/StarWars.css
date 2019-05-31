@@ -1,0 +1,43 @@
+.starWarsCharacterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 80rem;
+}
+
+.starWarsCharacterDetailList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 11rem;
+    height: 17rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-image: url(../assets/stars.gif);
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+    -moz-box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+    box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+}
+
+.detail {
+    color: yellow;
+    text-align: center;
+    padding-bottom: 1rem;
+    background: rgba(54, 53, 53, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detail:last-child {
+    border-bottom: none;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.description {
+    font-weight: bold;
+}
