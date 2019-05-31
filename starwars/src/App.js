@@ -17,8 +17,10 @@ class App extends Component {
 
   nextPage = event => {
     event.preventDefault();
-    this.setState({pageNumber: parseInt(`${this.state.pageNumber + 1}`)})
-    this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber}`)
+    if(this.state.pageNumber < 9) {
+      this.setState({pageNumber: parseInt(`${this.state.pageNumber + 1}`)})
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber}`)
+    }
   };
 
   previousPage = event => {
@@ -48,7 +50,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1 className="Header">React Wars</h1>
-        <StarWarsCharacterList characterListProperty={this.state.starwarsChars} nextProperty={this.nextPage} previousProperty={this.previousPage} />
+        <StarWarsCharacterList characterListProperty={this.state.starwarsChars} nextProperty={this.nextPage} previousProperty={this.previousPage} pageProperty={this.state.pageNumber}/>
       </div>
     );
   }
