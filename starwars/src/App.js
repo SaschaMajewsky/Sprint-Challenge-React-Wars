@@ -19,7 +19,7 @@ class App extends Component {
     event.preventDefault();
     if(this.state.pageNumber < 9) {
       this.setState(prevState => ({ pageNumber: prevState.pageNumber + 1 }))
-      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber}`)
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber + 1}`)
     }
   };
 
@@ -27,7 +27,7 @@ class App extends Component {
     event.preventDefault();
     if(this.state.pageNumber > 1) {
       this.setState(prevState => ({ pageNumber: prevState.pageNumber -1 }))
-      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber}`)
+      this.getCharacters(`https://swapi.co/api/people/?page=${this.state.pageNumber - 1}`)
     }
   };
 
