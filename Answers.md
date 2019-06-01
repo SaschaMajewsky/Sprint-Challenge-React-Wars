@@ -40,6 +40,7 @@ React.Compontent's class.
 Function Components:
 -Functional Components don't offer methods by itself like a class with class methods does.
 -They receive their props as an argument passed over as an object into them.
+-They have less code within them in comparism to class components and are in general better in performance.
 
 
 Q:
