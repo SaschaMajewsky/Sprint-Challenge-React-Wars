@@ -1,0 +1,93 @@
+.starWarsCharacterList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+    width: 80rem;
+}
+
+.starWarsCharacterDetailList {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 11rem;
+    height: 17rem;
+    margin: 1rem;
+    padding: 1rem;
+    background-image: url(/assets/stars.gif);
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+    -moz-box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+    box-shadow: -1px 0px 16px 0px rgba(255,255,3,0.5);
+}
+
+.detail {
+    color: yellow;
+    text-align: center;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.detail:last-child {
+    border-bottom: none;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.description {
+    font-weight: bold;
+}
+
+.pagination {
+    display: flex;
+    margin-top: 1rem;
+  }
+  
+.previous {
+width: 15.2rem;
+height: 2.8rem;
+background: rgba(46, 46, 45, 0.7);
+border-radius: 15px;
+background-image: url("/assets/light-saber-blue-left-deactivated.png");
+background-repeat: no-repeat;
+cursor: pointer;
+margin-right: 2rem;
+padding-bottom: 0.5rem;
+}
+
+.previous:hover {
+-webkit-transition: background-image transform 0.5s ease-in;
+transition: background-image transform 0.5s ease-in;
+background-image: url("/assets/light-saber-blue-left-activated.png");
+}
+
+.next {
+width: 15.2rem;
+height: 2.8rem;
+background: rgba(46, 46, 45, 0.7);
+border-radius: 15px;
+background-image: url("/assets/light-saber-red-right-deactivated.png");
+background-repeat: no-repeat;
+cursor: pointer;
+margin-left: 2rem;
+padding-bottom: 0.5rem;
+}
+
+.next:hover {
+-webkit-transition: background-image transform 0.5s ease-in;
+transition: background-image transform 0.5s ease-in;
+background-image: url("/assets/light-saber-red-right-activated.png");
+}
+
+.pageNumberCounter {
+    width: 2rem;
+    height: 1.5rem;
+    padding-top: 0.5rem;
+    background: rgba(0, 0, 0, 0.8);
+    color: yellow;
+    margin-top: 0.8rem;
+    font-weight: bold;
+}
